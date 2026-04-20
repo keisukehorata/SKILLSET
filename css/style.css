@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	font-size: 100%;
+}
+*{/*全ての要素を一度に選択して、同じスタイルを適用させるために使う*/
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+	line-height: 1.7;
+}
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.main_visual{
+	padding: 100px 0 100px 0;
+	background: url("../img/visual.jpg") no-repeat center center/cover;
+	text-align: center;
+}
+.content{
+	max-width: 990px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+.content-title{
+	color: #00b6bd;
+	font-size: 24px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.osirase{
+	color: #00b6bd;
+	font-size: 24px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.main{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+.img{
+	max-width: 350px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.main .txt{
+	max-width: 600px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.revers{
+	flex-direction: row-reverse;
+}
+.gbnav ul{
+	display: flex;
+	list-style: none;
+}
+.gbnav li{
+	margin-left: 20px;
+}
+.gbnav li a{
+	color: #000;
+	text-decoration: none;
+}
+#news dl{
+	display: flex;
+	border-bottom: solid 1px #ccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#news dl dd{
+	margin-left: 50px;
+}
+.topbar{
+	background: #f2f8f8;
+	padding: 50px;
+}
+#coursetitle{
+	color: #00b6bd;
+	font-size: 30px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+.Breadcrumbs{
+	display: flex;
+	font-size: 14px;
+}
+.Breadcrumbs li a{
+	color: #00b6bd;
+}
+.course{
+	display: flex;
+	flex-direction: column;
+	width: 475px;
+}
+.coursemain{
+	display: flex;
+	justify-content: space-between;
+}
+.coursemain table{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.coursemain th{
+	border: 1px #ccc solid;
+	text-align: center;
+	padding: 10px;
+	background: #f2f8f8;
+	color: #00b6bd;
+	font-weight: bold;
+}
+.coursemain td{
+	border: 1px #ccc solid;
+	text-align: left;
+	padding: 10px;
+}
+h3{
+	margin: 20px 0;
+	font-weight: bold;
+}
+.courseimg{
+	max-width: 475px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.pricelist table{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.pricelist th{
+	border: 1px #ccc solid;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+	background: #f2f8f8;
+	color: #00b6bd;
+	font-weight: bold;
+}
+.pricelist td{
+	border: 1px #ccc solid;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+}
+.pricelist td span{
+	font-size: 14px;
+}
+.pricelist thead th{
+	color: #fff;
+	background: #00b6bd;
+}
+.pricelist thead th:first-child{
+	background: none;
+	border: none;
+}
+.celltitle{
+	background-color: #00b6bd;
+	color: #fff;
+	font-weight: bold;
+}
+.imglist ul {
+	display: grid;
+	width: 100%;
+	column-gap: 0.5em;
+	grid-template-columns: repeat(2, auto);
+	padding-top: 20px;
+	
+}
+/*.imglist ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.imglist ul li{
+	width: 49%;
+	margin-bottom: 10px;
+}*/
+#address{
+	margin-bottom: 20px;
+}
+#address dl{
+	display: flex;
+	border-bottom: solid 1px #ccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#address dl dt{
+	width: 150px;
+}
+#footer{
+	background: #f2f8f8;
+	text-align: right;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.ftnav{
+	padding-bottom: 10px;
+	padding-right: 20px;
+}
+.sitemap{
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+.sp li{
+	background: url("../img/pointicon.png")no-repeat left 5px;
+	background-size: 20px;
+	padding-left: 15px;
+}
+.ftnav li{
+	margin-left: 20px;
+}
+.ftnav li a{
+	text-decoration: none;
+	color: #000;
+}
+small{
+	color: #aaa;
+	padding-right: 20px;
+}
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area{
+	display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+.form dl{
+	display: flex;
+	border-bottom: solid 1px #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.form dt{
+	width: 20%;
+}
+
+.form dd{
+	width: 80%;
+}
+
+.form input,select,textarea{
+	padding: 5px;
+	border: solid 1px #ccc;
+}
+
+.form input[name="Email"]{
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.form textarea{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.btn{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.form .btn input[type="submit"]{
+	background: #00b6bd;
+	border: none;
+	width: 320px;
+	color: #FFFFFF;
+	padding: 20px 0;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 35px;
+	cursor: pointer;
+}
